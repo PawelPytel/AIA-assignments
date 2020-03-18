@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.all {
+  position: relative;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.container {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-bottom: 102px;
+}
+
+.navbar {
+  display: block;
+  height: 100px;
+}
+.navbar:after {
+  clear: both;
+}
+
+header {
+  font-family: "Times New Roman", serif;
+  font-size: 32px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  min-width: 400px;
+  float: right;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Times New Roman", serif;
+}
+.menu li {
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  height: 48px;
+  display: block;
+  float: left;
+}
+img:after {
+  clear: both;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+}
+
+.content, .content-left, .content-right {
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+  box-sizing: border-box;
+  justify-self: space-between;
+  min-height: 300px;
+  border: solid 2px;
+  background-color: #95bf93;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+.content p, .content-left p, .content-right p {
+  margin-top: 20px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.content-right {
+  margin-right: 0px;
+}
+
+.titleLine {
+  height: 40px;
+}
+
+.empty {
+  display: block;
+  float: left;
+}
+
+.sectionTitle, .sectionTitle3, .sectionTitle2, .sectionTitle1 {
+  float: right;
+  font-size: 24px;
+  display: block;
+  border-bottom: solid 2px;
+  border-left: solid 2px;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+}
+
+.sectionTitle1 {
+  background-color: lightblue;
+}
+
+.sectionTitle2 {
+  background-color: lightsalmon;
+}
+
+.sectionTitle3 {
+  background-color: pink;
+}
+
+footer {
+  margin: 0;
+  margin-top: -100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100px;
+  text-align: center;
+  border-top: solid 2px;
+  background-color: #95bf93;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hamburger {
+  margin-top: 10px;
+  display: none;
+  float: right;
+}
+
+.signature {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 599px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+  .content, .content-right, .content-left {
+    margin-right: 0px;
+  }
+
+  nav {
+    min-width: 0px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .content-right {
+    margin-right: 0;
+  }
+
+  .content-left {
+    min-height: 250px;
+    flex: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav {
+    min-width: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
