@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "firstName": "Jan",
+        "lastName": "Kowalski",
+        "title": "Monsters",
+        "description": "It is a scary book",
+        "rating": 5,
+        "imgSrc": "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
+        "prototype": false
+    },
+    {
+        "id": 2,
+        "firstName": "Jan",
+        "lastName": "Nowak",
+        "title": "Aliens",
+        "description": "Some strange monsters here",
+        "rating": 5,
+        "imgSrc": "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
+        "prototype": false
+    },
+    {
+        "id": 3,
+        "firstName": "Jan",
+        "lastName": "Głowacki",
+        "title": "Famous people",
+        "description": "One hundred biographies!",
+        "rating": 4,
+        "imgSrc": "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
+        "prototype": false
+    },
+    {
+        "id": 4,
+        "firstName": "Jan",
+        "lastName": "Cebula",
+        "title": "Boring life",
+        "description": "SOOOOOOO boring",
+        "rating": 5,
+        "imgSrc": "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
+        "prototype": false
+    }
+]
