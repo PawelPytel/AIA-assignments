@@ -1,0 +1,78 @@
+html, body {
+    height:100%;
+}
+.container{
+    margin: 5%;
+    min-height: 100%;
+    background-color: lightgrey;
+
+}
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    align-self: center;
+    padding-top:20px;
+}
+.movie{
+    align-content: center;
+    justify-content: space-between;
+    display:flex;
+    padding:10%;
+    margin:2%;
+    background-color: rgb(199, 255, 115);
+}
+.info{
+    text-align: left;
+    justify-self: start;
+    font-size: 22px;
+    padding:5px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    justify-self: start;
+}
+.myButton{
+    border:none;
+    background-color: indigo;
+    color:yellow;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    display:block;
+    max-width:100px;
+
+}
+
+.myButton:hover{
+    cursor: pointer;
+    background-color: violet;
+}
+
+.navButton{
+    position:fixed;
+    top:15%;
+    left:75%;
+    width:100px;
+    height: 70px;
+}
+.cancell{
+    position:fixed;
+    top:40%;
+    left:75%;
+    width:100px;
+    height: 70px;
+}
+.finalize{
+    position:fixed;
+    top:60%;
+    left:75%;
+    width:100px;
+    height: 70px;
+}
+

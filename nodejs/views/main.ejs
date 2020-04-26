@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Store</title>
+  <meta name="description" content="Movies store">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Main page</h1>
+    <div class="list">
+      
+      <%for(var i=0;i<movies.length;i++){%>
+      <div class="movie">
+        <div class="info">Title: <%= movies[i].title %> </div>
+        <div class="info">Director: <%= movies[i].director %> </div>
+        <div class="info">Price: <%= movies[i].price %> </div>
+        <div class="info">Quantity: <%= movies[i].quantity %> </div>
+        <button class="myButton" type="submit" onclick="addToCart('<%=JSON.stringify(movies[i])%>')">Add to cart</button>
+      </div>
+      <%}%>
+      </div>
+
+        <a href="/checkout" class="myButton navButton">Show my cart</a>
+        <button type="submit" onclick="resetQuantities()">Reset quantities</button> - this button is here just for testing purposes
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

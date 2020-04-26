@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Store</title>
+  <meta name="description" content="Movies store">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Checkout</h1>
+        <div class="list">
+        <%if(movies){%>
+        <%for(var i=0;i<movies.length;i++){%>
+          <div class="movie">
+            <div class="info">Title: <%= movies[i].title %>  </div>
+            <div class="info">Author: <%= movies[i].director %> </div>
+            <div class="info">Price: <%= movies[i].price %> </div>
+            <button type="submit" class="myButton" onclick="removeFromCart('<%=JSON.stringify(movies[i])%>',this)">Remove from cart</button>
+          </div>
+        <%}%>
+        <%}%>
+        </div>
+        <a href="/" class="myButton navButton">Go back to the main page</a>
+
+        <button class="myButton cancell" type="submit" onclick="cancellPurchase()">Cancell purchase</button>
+        <button class="myButton finalize" type="submit" onclick="finalize()">Finalize</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
